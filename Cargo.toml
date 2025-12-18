@@ -1,6 +1,6 @@
 [package]
 name = "noir_rs"
-version = "1.0.0-beta.14"
+version = "1.0.0-beta.16__"
 edition = "2021"
 authors = ["Bartosz Nowak", "Theo Madzou"]
 
