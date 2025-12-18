@@ -1,2 +1,4 @@
 [env]
-RUST_LOG = "info"
+# Required for building bb_rs with AppleClang 17+ (Xcode 16+)
+# The barretenberg C++ code uses variable-length arrays which newer Clang treats as an error
+CXXFLAGS = "-Wno-vla-cxx-extension -Wno-error=vla-cxx-extension -Wno-vla"
